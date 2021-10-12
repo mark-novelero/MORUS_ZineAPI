@@ -1,10 +1,10 @@
 const express = require('express'); 
 const router = express.Router(); 
-const { check, validationResult } = require('express-validator'); 
 const bcrypt = require('bcryptjs')                                                          // import bcrypt.js
 const User = require('../../models/User')                                                   // import User schema
 const jwt = require('jsonwebtoken')
 const config = require('config')
+const { check, validationResult } = require('express-validator'); 
 
 // @route   POST api/users
 // @desc    Test route
