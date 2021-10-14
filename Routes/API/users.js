@@ -32,7 +32,7 @@ async (req, res) => {                                                           
    try {                                                                                    // try is a statement that allows you to check for errors. 
         let user = await User.findOne({ username });                                        // See if user exists during user registration by checking if username exists
         if (user){  
-           return res.status(400).json({errors: [ {msg: 'User already exists'} ]});         // if user already exists, send status 400
+           return res.status(400).json({errors: [ {msg: 'User already exists!'} ]});         // if user already exists, send status 400
         }
 
         user = new User({
