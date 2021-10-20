@@ -1,7 +1,7 @@
 const mongoose = require('mongoose'); 
 
 const ZineSchema = new mongoose.Schema({
-    title: {
+    zine_title: {
         type: String, 
         required: true
     },
