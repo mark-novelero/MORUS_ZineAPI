@@ -62,6 +62,18 @@ const ZineSchema = new mongoose.Schema({
         type: String, 
         required: true
     },
+    union_id: {
+        type: String, 
+        required: true
+    },
+    physical_description: {
+        type: String, 
+        required: true
+    }, 
+    freedoms_restrictions: {
+        type: String, 
+        required: true
+    },
     cover_page_url: {
         type: String, 
         required: true
