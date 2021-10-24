@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://MORUS_Admin:AveC155@moruszinedb.jwtdn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", 
+    "mongoURI": "", 
     "jwtSecret": "morusmuseum"
 }

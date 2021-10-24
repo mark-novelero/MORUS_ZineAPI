@@ -24,7 +24,6 @@ router.get('/', auth, async (req, res) => {
 
 
 
-
 // @route   POST api/auth
 // @desc    Authenticate user and get token
 // @access  Public 
@@ -42,8 +41,6 @@ async (req, res) => {                                                           
        return res.status(400).json({errors: errors.array()})                        
    } 
 
-
-
 const { username, password } = req.body;                                                 
                                                                                             // code block checks if user exists
    try {                                                                                    // try is a statement that allows you to check for errors. 
@@ -51,8 +48,7 @@ const { username, password } = req.body;
         if (!user){                                                                         // if user does not exist
            return res.status(400).json({errors: [ {msg: 'Invalid Credentials'} ]});         // send 'invalid credentials' message
         }
-
-        
+      
         
 const isMatch = await bcrypt.compare(password, user.password)                               //bcrypt compare saved user password with password input
     

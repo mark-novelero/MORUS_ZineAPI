@@ -13,8 +13,8 @@ const ZineSchema = new mongoose.Schema({
         type: String, 
         required: true
     }, 
-    indentifier: {
-        type: Number, 
+    identifier: {
+        type: String, 
         required: true
     }, 
     content_description: {
@@ -22,57 +22,44 @@ const ZineSchema = new mongoose.Schema({
         required: true
     }, 
     subject: {
-        type: String, 
-        required: true
+        type: String 
     }, 
     genre: {
-        type: String, 
-        required: true
+        type: String
     }, 
     publisher: {
-        type: String, 
-        required: true
+        type: String
     }, 
     date: {
         type: Number, 
-        min: 0, 
-        required: true
+        min: 0
     }, 
     format: {
-        type: String, 
-        required: true
+        type: String
     }, 
     source: {
-        type: String, 
-        required: true
+        type: String
     }, 
     language: {
-        type: String, 
-        required: true, 
+        type: String 
     },
     relation: {
-        type: String, 
-        required: true
+        type: String
     }, 
     coverage: {
-        type: String, 
-        required: true
+        type: String
     }, 
     rights: {
-        type: String, 
-        required: true
+        type: String
     },
     union_id: {
-        type: String, 
-        required: true
+        type: String
     },
     physical_description: {
-        type: String, 
-        required: true
+        type: String
     }, 
     freedoms_restrictions: {
-        type: String, 
-        required: true
+        type: String
     },
     cover_page_url: {
         type: String, 
